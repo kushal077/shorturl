@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>short urls! </title>
+    <style media="screen">
+      body{
+        background-color: lightgreen;
+      }
+      #cont{
+        width: 500px;
+        height:500px;
+        position: absolute;
+        left:500px;
+        top:300px;
+        background-color: ;
+      }
+      h2{
+        font-size: 90px;
+        text-align: center;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h2>Short your url!</h2>
+    <div id="cont">
+        <h1>{{ title }}</h1>
+        <form  method="post">{% csrf_token %}
+          {{ form.as_p }}
+
+          <input type="submit" name="" value="shortener">
+        </form>
+        <h4> short url!</h4>
+      </div>
+  </body>
+</html>
